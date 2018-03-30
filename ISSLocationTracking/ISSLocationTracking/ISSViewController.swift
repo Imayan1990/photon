@@ -62,59 +62,23 @@ class ISSViewController: UIViewController,UICollectionViewDataSource {
         return cell
         
     }
-    /**
-     This method will get the data from Json and parse into an object.
-     
-     - parameter closure:() -> ()
- 
- 
- 
- 
-    */
- 
-    func downloadJSON(completed: @escaping () -> () ){
-    let url = URL(string: "http://api.open-notify.org/iss-pass.json?lat=\(userlat!)&lon=\(userlon!)")
-    URLSession.shared.dataTask(with: url!) { (data,response, error) in
-    if error == nil{
-     do{
-      let json = try  JSONDecoder().decode(ISSJsonData.self, from: data!)
-      self.jsonResponse = json.response
-      DispatchQueue.main.async {
-     
-     self.altitude.text  = String(json.request.altitude)
-     self.longitude.text = String(json.request.longitude)
-     self.latitude.text = String(json.request.latitude)
-     self.passes.text = String(json.request.passes)
-     print(json)
-     completed()
-        self.CollectionView.reloadData()
-     
-     }
-     } catch {
-     
-     print("Json Error")
-     }
-     }
-     }.resume()
-     
-     }
+  
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         if let userlat = userlat,let userlon = userlon {
             latitude.text = userlat
-            longitude.text = userlat
+            longitude.text = userlon
             userInput.text =  " Location is \(userlat) - \(userlon)"
         }
         CollectionView.dataSource = self
         downloadJSON {
-            print("successful")
-            
+            print("successfull")
+
         }
 
-      
     }
-
 
 }
 

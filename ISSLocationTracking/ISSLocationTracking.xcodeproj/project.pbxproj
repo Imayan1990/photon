@@ -18,6 +18,7 @@
 		93B6E456206854730061E8B0 /* ISSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6E455206854730061E8B0 /* ISSViewController.swift */; };
 		93B6E4582068765B0061E8B0 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6E4572068765B0061E8B0 /* CustomCollectionViewCell.swift */; };
 		93B6E45A20689B250061E8B0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6E45920689B250061E8B0 /* Model.swift */; };
+		93D7735E206DCA000081D768 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D7735D206DCA000081D768 /* JSONHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		93B6E455206854730061E8B0 /* ISSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSViewController.swift; sourceTree = "<group>"; };
 		93B6E4572068765B0061E8B0 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		93B6E45920689B250061E8B0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		93D7735D206DCA000081D768 /* JSONHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				93B6E455206854730061E8B0 /* ISSViewController.swift */,
 				93B6E45920689B250061E8B0 /* Model.swift */,
 				93B6E4572068765B0061E8B0 /* CustomCollectionViewCell.swift */,
+				93D7735D206DCA000081D768 /* JSONHelper.swift */,
 				93B6E42B206854030061E8B0 /* Main.storyboard */,
 				93B6E42E206854030061E8B0 /* Assets.xcassets */,
 				93B6E430206854030061E8B0 /* LaunchScreen.storyboard */,
@@ -274,6 +277,7 @@
 				93B6E45A20689B250061E8B0 /* Model.swift in Sources */,
 				93B6E456206854730061E8B0 /* ISSViewController.swift in Sources */,
 				93B6E42A206854030061E8B0 /* ViewController.swift in Sources */,
+				93D7735E206DCA000081D768 /* JSONHelper.swift in Sources */,
 				93B6E428206854030061E8B0 /* AppDelegate.swift in Sources */,
 				93B6E4582068765B0061E8B0 /* CustomCollectionViewCell.swift in Sources */,
 			);

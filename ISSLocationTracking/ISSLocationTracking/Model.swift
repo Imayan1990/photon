@@ -12,23 +12,23 @@ import Foundation
 /// Model object ISSJsonData
 
 struct ISSJsonData: Codable {
-    let message: String
-    let request: Request
-    let response: [Response]
+    var message: String
+    var request: Request
+    var response: [Response]
 }
 
 ///  Model object REquest
 
 struct Request: Codable {
-    let altitude, datetime: Int
-    let latitude, longitude: Double
-    let passes: Int
+    var altitude, datetime: Int
+    var latitude, longitude: Double
+    var passes: Int
 }
 
 /// Model object Response
 
 struct Response: Codable {
-    let duration:Int , risetime: Double
+    var duration:Int , risetime: Double
 }
 
 // MARK: Convenience initializers
